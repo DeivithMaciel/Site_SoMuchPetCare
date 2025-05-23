@@ -2,13 +2,15 @@
 
 .hero {
     padding: 5.6vw;
-    min-height: 80vh;
-    background-image: url(../images/hero_desktop.jpeg);
+    min-height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2021/07/05/14/07/dog-6389277_1280.jpg);
     text-align: center;
     background-size: cover;
 
+
+
     @media(max-width: 768px){
-                background-image: url(../images/hero_celular.jpeg);
+                background-image: url(https://cdn.pixabay.com/photo/2023/10/31/17/25/finnish-lapphund-8355620_1280.jpg);
                 padding-top: calc(50vw + 25px);
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -22,6 +24,11 @@
 
     &__content{
         max-width: 640px;
+        padding-top: 120px;
+
+        @media(max-width:768px){
+            padding-top: 40px;
+        }
 
         &__brending{
             max-width: 320px;
@@ -29,6 +36,14 @@
 
             @media(max-width: 768px){
                 max-width: 180px;
+            }
+            h1{
+                padding-bottom: 24px;
+                font-size: 48px;
+                @media(max-width: 768px){
+                    font-size: 24px;
+                    padding-bottom: 16px;
+                }
             }
         }
 

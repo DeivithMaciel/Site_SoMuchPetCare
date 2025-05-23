@@ -2,7 +2,6 @@
 @use 'variaveis';
 @use 'shows';
 @use 'plans';
-@use 'available';
 @use 'faq';
 @use 'footer';
 @use 'header';
@@ -34,7 +33,7 @@ body{
 @mixin text($fontsize: 16px) {
     font-size: $fontsize;
     line-height: + 10px;
-    color: variaveis.$corTextoPrincipal;
+    color: variaveis.$corTextoSecunario;
 }
 
 @mixin title($fontsize: 40px) {
@@ -46,6 +45,15 @@ body{
     @include text(18px);
     @media(max-width: 768px){
         @include text(15px);
+    }
+}
+
+.text__big {
+    @include text(18px);
+    color: variaveis.$corDeFundoBotaoPrimario;
+    @media(max-width: 768px){
+        @include text(15px);
+        color: variaveis.$corDeFundoBotaoPrimario;
     }
 }
 
@@ -88,6 +96,14 @@ body{
     @include title(28px);
     @media(max-width: 768px){
         @include title(22px);
+    }
+}
+
+.white{
+    color: variaveis.$corTextoPrincipal;
+
+    @media(max-width:768px){
+        color: variaveis.$corTextoSecunario;
     }
 }
 

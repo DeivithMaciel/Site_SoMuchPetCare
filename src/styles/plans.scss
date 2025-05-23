@@ -11,10 +11,15 @@
         display: flex;
         justify-content: space-around;
         margin-top: 50px;
+        align-items: center;
 
         
         @media (max-width: 768px){
             display: block;
+        }
+
+        h1{
+            padding-bottom: 16px;
         }
 
         .button{
@@ -27,16 +32,15 @@
             max-width: 380px;
             width: 100%;
 
+            @media(max-width: 768px){
+                padding-top: 20px;
+            }
 
             img{
-                height: 83px;
+                height: 160px;
+                width: 190px;
+                border-radius: 5%;
             }
-        }
-
-        .plus{
-            background-image: url(../images/fundo_combo_plus.png);
-            background-size: contain;
-            background-repeat: no-repeat;
         }
 
         strong{
@@ -51,5 +55,10 @@
         margin-bottom: 1vw;
         line-height: 24px;
     }
+}
+
+.plus{
+    background-color: #ffb8b8;
+    border-radius: 25%;
 }
 
