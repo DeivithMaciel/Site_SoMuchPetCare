@@ -43,8 +43,12 @@
         border-radius: 50%;
         transition: opacity .5s ease;
 
-            @media(max-width: 768px){
+            @media(max-width: 1023px){
                 max-width: 64px;
+            }
+            
+            @media (max-width:767px){
+                max-width: 40px;
             }
     }
 
@@ -61,11 +65,14 @@
     .button{
         height: 50px;
 
-        @media (max-width:768px){
+        @media (max-width:1023px){
             font-size: 13px;
             padding: 8px 11px;
             height: 40px;
             letter-spacing: 0;
+        }
+        @media (max-width:767px){
+            height: 36px;
         }
     }
 }
