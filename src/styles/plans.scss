@@ -13,9 +13,14 @@
         margin-top: 50px;
         align-items: center;
 
-        
-        @media (max-width: 768px){
+        @media (max-width: 1023px){
             display: block;
+            padding-left: 144px;
+        }
+
+        
+        @media (max-width: 767px){
+            padding-left: 0;
         }
 
         h1{
